@@ -1,0 +1,9 @@
+﻿
+@model Domain.UseCases.Users.Read.Response
+
+<h1>Welcome @Model.UserInfo.FirstName @Model.UserInfo.LastName</h1>
+<h3>Applications</h3>
+@foreach (var application in Model.Applications)
+{
+    <h5>@application.Name</h5>
+}
